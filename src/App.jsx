@@ -8,32 +8,26 @@ function App() {
 
   return (
     <>
-     <header>
-          <nav className='container__nav'>
-            <a href="#">Logo</a>
-            <ul className='container__lista'>
-              <li className='lista' ><a href="#">Inicio</a></li>
-              <li className='lista' ><a href="#">Sobre Mi</a></li>
-              <li className='lista' ><a href="#">Habilidades</a></li>
-              <li className='lista' ><a href="#">Mis proyectos</a></li>
-              <button className='button'>Contactame</button>
-            </ul>
-          </nav>
-     </header>
-
-
-     
-     <section>
-      <div className="container__information">
-            <div className='texto'>
-              <h2>Hola! soy Gerardo un <span>Ingeniero de Software</span></h2>
-              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae ex numquam odio tenetur esse neque hic aliquid, alias eveniet veniam dolores minus voluptas. Odit dignissimos reiciendis vel libero sed praesentium.</p>
-            </div>
-            <div className='imagen'>
-              <img src="" alt="Gerardo Josias Chevarria Rodriguez" />
-            </div>
-          </div>
-     </section>
+      <div>
+        <a href="https://vitejs.dev" target="_blank">
+          <img src={viteLogo} className="logo" alt="Vite logo" />
+        </a>
+        <a href="https://react.dev" target="_blank">
+          <img src={reactLogo} className="logo react" alt="React logo" />
+        </a>
+      </div>
+      <h1>Proyecto de Gerardo</h1>
+      <div className="card">
+        <button onClick={() => setCount((count) => count + 1)}>
+          count is {count}
+        </button>
+        <p>
+          Edit <code>src/App.jsx</code> and save to test HMR
+        </p>
+      </div>
+      <p className="read-the-docs">
+        Click on the Vite and React logos to learn more
+      </p>
     </>
   )
 }
